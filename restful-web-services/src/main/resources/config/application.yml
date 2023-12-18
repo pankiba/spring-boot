@@ -1,0 +1,14 @@
+### server properties
+
+server:
+  servlet:
+    context-path: /restful-web-services
+  port: 8080
+
+### application properties
+
+spring:
+  application:
+    name: restful-web-services
+    
+
