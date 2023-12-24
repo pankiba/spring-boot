@@ -7,6 +7,8 @@ import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootVersion;
+import org.springframework.core.SpringVersion;
 import org.springframework.core.env.Environment;
 
 import lombok.extern.slf4j.Slf4j;
@@ -43,7 +45,11 @@ public class ApplicationUtils {
 		} catch (UnknownHostException unknownHostException) {
 			log.warn("The host name could not be determined, using 'localhost' as fallback");
 		}
+		
 
+		log.info("Spring Framework Version : {}, Spring Boot Version : {}", SpringVersion.getVersion(),
+				SpringBootVersion.getVersion());
+		
 		log.info(
 				"\n--------------------------------------------------------------------\n\t"
 						+ "Application '{}' is running! Access URLs:\n\t" + "Local: \t\t{}://localhost:{}{}\n\t"

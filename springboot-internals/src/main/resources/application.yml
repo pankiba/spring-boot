@@ -1,8 +1,8 @@
-
-server:
-  port: 8080
-
   
 spring:
   application:
     name: springboot-internals
+    
+logging:
+  level:
+    '[org.springframework]': INFO
