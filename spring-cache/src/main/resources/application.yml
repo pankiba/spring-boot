@@ -1,0 +1,8 @@
+  
+spring:
+  application:
+    name: spring-cache
+    
+logging:
+  level:
+    org.springframework.cache: TRACE
